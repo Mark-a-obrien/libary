@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Libary</title>
+</head>
+<body>
+
+    <header><h1>Libary</h1></header>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <p></p>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <form action="" method="">  
+                <div>
+                    <input type="text" id="author" name="author" placeholder="Author" required>
+                </div>
+
+                <div>
+                    <input type="text" id="title" name="author" placeholder="Title" required>
+                </div>
+
+                <div>
+                    <input type="number" id="pageNum" name="pageNum" placeholder="Page Number" required>
+                </div>
+
+                <div>
+                    <label for="read">Read</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+
+                <div class="buttons">
+                    <button data-close-button class="cancel">Cancel</button>
+                    <button class="create">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="content"></div>
+    
+    <div class="newBook">
+        <button data-modal-target="#modal" id="newBook">New Book</button>
+    </div>
+    
+</body>
+</html>
